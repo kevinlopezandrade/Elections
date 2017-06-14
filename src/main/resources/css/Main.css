@@ -1,0 +1,193 @@
+.background {
+	-fx-background-color: #292C32;
+}
+
+.iconButton {
+	-fx-background-color: linear-gradient(to right, #FF5454, #FC5F45);
+}
+
+.backButton {
+	-fx-background-color: transparent;
+}
+
+.sideBar {
+	-fx-background-color: linear-gradient(to right, #FF5454, #FC5F45);
+}
+
+
+.cards {
+	-fx-background-color: rgba(255,255,255,0.06);
+}
+
+.label {
+	-fx-text-fill: #white;
+}
+
+.axis-label .text {
+	-fx-text-fill: white;
+}
+
+
+.chart-pie-label-line {
+	-fx-stroke: white;
+	-fx-fill: white;
+}
+
+.chart-title {
+	-fx-text-fill: white;
+}
+
+.chart-pie-label {
+	-fx-fill: white;
+	-fx-font-size: 1em;
+}
+.chart-legend {
+	/*-fx-background-color: rgba(255,255,255,0.20);*/
+	-fx-background-color: transparent;
+	-fx-stroke: white;
+    /*-fx-text-fill: white;*/
+}
+
+.chart-legend-item {
+	-fx-text-fill: white;
+}
+.axis:left,
+.axis:bottom {
+	-fx-text-fill: white;
+	-fx-tick-label-fill: white;
+}
+
+.split-pane:horizontal .split-pane-divider {
+	-fx-background-color: #292C32;
+}
+
+.labelTitlePane {
+	-fx-font-size: 20px;
+}
+
+.chart-content .chart-plot-background {
+	-fx-background-color: transparent;
+}
+
+.chart {
+	-fx-background-color: transparent;
+}
+
+.first-titled-pane:collapsed .title,
+.titled-pane:collapsed .title,
+.titled-pane:expanded .title {
+	-fx-background-color: transparent;
+}
+
+.first-titled-pane:collapsed .title:hover,
+.titled-pane:collapsed .title:hover,
+.titled-pane:expanded .title:hover {
+	-fx-background-color: rgba(255,255,255, 0.40);
+}
+
+
+.first-titled-pane:collapsed .title .arrow-button .arrow,
+.titled-pane:collapsed .title .arrow-button .arrow,
+.titled-pane:expanded .title .arrow-button .arrow {
+	-fx-background-color: white;
+}
+
+.first-titled-pane:collapsed .title .arrow-button .arrow,
+.titled-pane:collapsed .title .arrow-button .arrow,
+.titled-pane:expanded .title .arrow-button .arrow {
+	-fx-background-color: white;
+}
+
+
+.titled-pane:focused > .title > .arrow-button > .arrow {
+    -fx-background-color: white;
+	-fx-background-insets: 0, 0;
+	-fx-effect: inherit;
+}
+
+.list-cell:filled:even:selected,
+.list-cell:filled:odd:selected {
+	-fx-background-color: #0095CB;
+	-fx-text-fill: white;
+}
+
+.box {
+	-fx-background-color: #292C32;
+}
+
+.check-box:selected:determinate .box .mark {
+	-fx-background-color: #FC5F45;
+}
+
+.titled-pane:expanded .content,
+.titled-pane:collapsed .content{
+	-fx-background-color: transparent;
+}
+
+.clipped-container,
+.sheet,
+.virtual-flow,
+.list-view {
+	-fx-background-color: transparent;
+}
+.list-cell:filled:even,
+.list-cell:filled:odd {
+	-fx-background-color: rgba(255,255,255,0.48);
+}
+
+.list-cell:empty:even,
+.list-cell:empty:odd {
+	-fx-background-color: rgba(255,255,255,0.48);
+}
+
+
+/* The main scrollbar **track** CSS class  */
+.mylistview .scroll-bar:horizontal .track,
+.mylistview .scroll-bar:vertical .track{
+	-fx-background-color:transparent;
+	-fx-border-color:transparent;
+	-fx-background-radius: 0em;
+	-fx-border-radius:2em;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+e .scroll-bar:horizontal .increment-button ,
+e .scroll-bar:horizontal .decrement-button {
+	-fx-background-color:transparent;
+	-fx-background-radius: 0em;
+	-fx-padding:0 0 10 0;
+
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+
+	-fx-background-color:transparent;
+	-fx-background-radius: 0em;
+	-fx-padding:0 10 0 0;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+	-fx-shape: " ";
+	-fx-padding:0;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+	-fx-background-color:derive(black,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+/*.track {*/
+	/*-fx-background-color: #292C32;*/
+/*}*/
+
+/*.thumb {*/
+	/*-fx-background-color: #FC5F45;*/
+/*}*/

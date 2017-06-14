@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.ColorAdjust?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" type="ProgressIndicator" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <effect>
+      <ColorAdjust brightness="1.0" hue="-0.2" />
+   </effect>
+</fx:root>

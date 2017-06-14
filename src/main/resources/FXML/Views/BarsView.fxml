@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root dividerPositions="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="925.0" style="-fx-background-color: transparent;" stylesheets="@../../css/Main.css" type="SplitPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <VBox id="sideBar" maxHeight="1.7976931348623157E308" maxWidth="270.0" minHeight="0.0" minWidth="0.0" prefWidth="400.0" spacing="15.0" styleClass="sideBar">
+         <children>
+            <HBox fx:id="backContainer" prefHeight="100.0" prefWidth="200.0">
+               <padding>
+                  <Insets right="20.0" top="15.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </HBox>
+            <Label text="Year">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin></Label>
+            <TitledPane fx:id="yearsPane" expanded="false" text="Select Year" textFill="WHITE">
+               <content>
+                  <ListView fx:id="yearsListView" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </TitledPane>
+            <Label text="Community">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin></Label>
+            <TitledPane fx:id="communityPane" expanded="false" text="Select Community" textFill="WHITE">
+               <content>
+                  <ListView fx:id="communityListView" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </TitledPane>
+            <Label text="Province">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin></Label>
+            <TitledPane fx:id="provincePane" expanded="false" text="Select Province" textFill="WHITE">
+               <content>
+                  <ListView fx:id="provincesListView" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </TitledPane>
+            <Label text="Region">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin></Label>
+            <TitledPane fx:id="regionPane" expanded="false" prefHeight="200.0" prefWidth="161.0" text="Select Region" textFill="WHITE">
+               <content>
+                  <ListView fx:id="regionListView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" />
+               </content>
+            </TitledPane>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label text="Options">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label text="Filter by percentage" textFill="WHITE" />
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Slider fx:id="slider" blockIncrement="1.0" max="5.0" showTickMarks="true" />
+                        <Label fx:id="number" text="0%" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="35.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="cards" VBox.vgrow="ALWAYS">
+               <children>
+                  <!--<PieChart fx:id="pieChartCommunity" />-->
+                  <PieChart fx:id="provincePieChart" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="cards" VBox.vgrow="ALWAYS">
+               <children>
+                  <BarChart fx:id="barChart" HBox.hgrow="ALWAYS">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </BarChart>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="25.0" top="15.0" />
+               </opaqueInsets>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+      </VBox>
+   </items>
+</fx:root>
